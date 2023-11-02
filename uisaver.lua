@@ -250,7 +250,7 @@ end
 local function set_window_data()
   for _, data in ipairs(windowlist_data) do
     if (mq.TLO.Window(data.name).Width() ~= data.width) or (mq.TLO.Window(data.name).Height() ~= data.height) or (mq.TLO.Window(data.name).X() ~= data.x) or (mq.TLO.Window(data.name).Y() ~= data.y) then 
-      print('Restoring: ',data.name, data.x, data.y, data.width, data.height)
+      --print('Restoring: ',data.name, data.x, data.y, data.width, data.height)
       mq.TLO.Window(data.name).Move(string.format('%s,%s,%s,%s', data.x, data.y, data.width, data.height))
       mq.delay(50)
     end
