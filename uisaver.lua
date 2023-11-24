@@ -1,7 +1,7 @@
 ---@type Mq
 local mq = require('mq')
 
--- big thanks to kaen, aq1 for help and inspiration!
+-- big thanks to kaen, aq1 for help and inspiration and to RedBot for setting up the gitbridge :)
 -- V 1.00
  
 local windowlist = {
