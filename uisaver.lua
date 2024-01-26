@@ -288,7 +288,7 @@ local function set_window_data()
       mq.TLO.Window(data.name).Move(string.format('%s,%s,%s,%s', data.x, data.y, data.width, data.height))
       mq.delay(50)
     end
-    if (mq.TLO.Window(data.name).BGColor() ~= data.BG) then
+    if (data.BG and mq.TLO.Window(data.name).BGColor() ~= data.BG) then
       mq.TLO.Window(data.name).SetBGColor(data.BG)()
       mq.delay(50)
     end
